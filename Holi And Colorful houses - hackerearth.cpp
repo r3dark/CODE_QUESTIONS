@@ -11,6 +11,32 @@ int main()
 	    cin >> n >> q;
 	    string s;
 	    cin >> s;
+//	    while(q--)
+//	    {
+//	        int x, y, candy1 = 0, candy2 = (s[0] != s[n-1]);
+//            cin >> x >> y;
+//            x--;
+//            y--;
+//            if(x > y)
+//            {
+//                swap(x, y);
+//            }
+//            
+//            for(int i=x; i<y; i++)
+//            {
+//                candy1 += (s[i] != s[i+1]);
+//            }
+//            
+//            for(int i=y; i<n-1; i++)
+//            {
+//                candy2 += (s[i] != s[i+1]);
+//            }
+//            for(int i=0; i<x; i++)
+//            {
+//                candy2 += (s[i] != s[i+1]);
+//            }
+//            cout << min(candy1, candy2) << endl;
+//	    }
 	    while(q--)
 	    {
 	        int x, y, i, candy1 = 0, candy2 = 0;
