@@ -26,18 +26,12 @@ int main()
             {
                 if(i == n - 1)
                 {
-                    if(s[i] != s[0])
-                    {
-                        candy1++;
-                    }
+                    candy1 += (s[i] != s[0]);
                     i = 0;
                 }
                 else 
                 {
-                    if(s[i] != s[i + 1])
-                    {
-                        candy1++;
-                    }
+                    candy1 += (s[i] != s[i + 1]);
                     i++;
                 }
             }
@@ -46,18 +40,12 @@ int main()
             {
                 if(i == 0)
                 {
-                    if(s[i] != s[n - 1])
-                    {
-                        candy2++;
-                    }
+                    candy2 += (s[i] != s[n - 1]);
                     i = n - 1;
                 }
                 else 
                 {
-                    if(s[i] != s[i - 1])
-                    {
-                        candy2++;
-                    }
+                    candy2 += (s[i] != s[i - 1]);
                     i--;
                 }
             }
